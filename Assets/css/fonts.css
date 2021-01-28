@@ -1,0 +1,14 @@
+@font-face {
+  font-family: SkyhookMonoBold;
+  src: url("../fonts/SkyhookMono_bold.ttf");
+}
+
+@font-face {
+  font-family: SkyhookMonoRegular;
+  src: url("../fonts/SkyhookMono_regular.ttf");
+}
+
+@font-face {
+  font-family: Introdução;
+  src: url("../fonts/Fontfabric-Intro-Black-Caps.otf");
+}

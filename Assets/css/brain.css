@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-index {
+  height: 20%;;
+  margin-left: 50px;
+}
+.index-title{
+  width: 10%;
+	color:#000000;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin-left: 2%;
+	font-family: introdução, Black Caps;
+}
+
+.box-notPages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notPages-404 {
+  padding-bottom: 3.75rem;
+  font-family: SkyhookMonoRegular, Black Caps;
+  font-size: 20rem;
+  color: #000;
+  font-weight: 900;
+}
+
+@media( max-width: 768px ) {
+  .notPages-404 {
+    font-size: 9rem;
+  }
+}
+
+.notPages-text {
+  font-family: SkyhookMonoRegular, Black Caps;
+  font-size: 2rem;
+  color: #000;
+  font-weight: 900;
+}
+
+@media( max-width: 768px ) {
+  .notPages-text {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+}

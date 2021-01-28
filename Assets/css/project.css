@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.box-index {
+  height: 20%;;
+  margin-left: 50px;
+}
+.index-title{
+  width: 10%;
+	color:#000000;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin-left: 2%;
+	font-family: introdução, Black Caps;
+}
+
+
+.box-about {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.box-img {
+  width: 50%;
+  height: 100%;
+}
+
+img  {
+	width: 85%;
+	border-radius: 2%;
+}
+	@media (max-width: 768px){
+		img {
+			width: 65%;
+			margin-top: 13%;
+
+		}
+  }
+  
+.box-description {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-description {
+	font-family: SkyhookMonoBold, Black Caps;
+	width: 85%;
+	font-size: 1.5rem;
+	line-height: 1.65rem;
+	letter-spacing: .10rem;
+	text-align: justify;
+}
+
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 7%;	
+	background: rgba(255,255,255,0.6);
+}
+
+
+.footer-text{
+	font-size: 0.90em;
+	color: #000000;
+	text-align: right;
+	letter-spacing: 0.10em;
+	line-height: 1em;
+	font-weight: bold;
+	margin: 0;
+}
+
+	@media (max-width: 768px){
+		.footer-text{
+			font-size: 0.60em;
+		}
+
+	}
+.footer-Autor{
+	letter-spacing: 0.25em;
+	font-style: oblique;
+}

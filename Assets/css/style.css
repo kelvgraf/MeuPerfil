@@ -1,0 +1,286 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  min-height: 100vh;
+	background: url('../img/Brain.png') no-repeat center center;
+	background-size: 47%; 
+	height: 100vh;
+}
+
+  @media (max-width: 768px) {
+		.profile {	
+			background-size: 100%;
+			background-attachment: fixed;
+		}
+	}
+
+.wrapper-projects {
+  width: 100vw;
+  height: 75%;
+	background: rgba(255,255,255,0.6);
+}
+
+#header {
+  width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.6);
+}
+.menu {
+  width: 100%;
+}
+.menu-list {
+  display: flex;
+  width: 85%;
+  justify-content: flex-end;
+  list-style: none;
+  font-family: SkyhookMonoRegular, Black Caps;
+}
+
+.menu-list a {
+  text-decoration: none;
+  position: relative;
+  color: #8c8c8c;
+}
+
+.menu-list a:hover {
+  color: #af7f30;
+}
+
+.menu-list a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -15px;
+  font-size: 1rem;
+  background-color: #af7f30;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-list a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.menu-item {
+  margin-left: 45px;
+}
+
+.wrapper {
+	width: 100vw;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: rgba(255,255,255,0.6);
+}
+
+	@media( max-width: 768px ) {
+		.wrapper {
+			height: auto;
+		}
+	}
+
+.wrapper-personal {
+	height: 80%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+	@media (max-width: 768px) {
+		.wrapper-personal{
+			flex-direction: column;
+		}
+	}
+
+.box {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+@media (max-width: 768px) {
+	.box{
+		width: 100%;
+	}
+}
+
+.img-photo {
+	width: 65%;
+	border-radius: 2%;
+}
+	@media (max-width: 768px){
+		.img-photo{
+			margin-top: 13%;
+		}
+	}
+
+.personal-title{
+	width: 45%;
+	color:#000;
+	font-size: 3.75em;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin: 2%;
+	font-weight: bolder;
+	text-align: center;
+	font-family: SkyhookMonoRegular, Black Caps;
+}
+@media (max-width: 768px){
+		.personal-title{
+			margin-top: 13%;
+			width: 65%;
+			text-align: center;
+			font-size: 2em;
+		}
+	}
+
+.personal-description {
+	width: 55%;
+	font-family: SkyhookMonoBold, Black Caps;
+	font-size: 1.5rem;
+	line-height: 1.65rem;
+	letter-spacing: .15rem;
+	text-align: center;
+}
+
+.personal-description a {
+	padding-top: 1.75rem;
+	font-family: introdução, Black Caps;
+	text-decoration: none;
+	color: #3c3823;
+	font-weight: 600;
+	font-size: .95rem;
+}
+
+.personal-description a:hover {
+	color: red;
+}
+
+@media(max-width: 560px) {
+	.personal-description{
+		width: 100%;
+	}
+}
+
+.more-seta {
+  font-size: 1.35rem;
+  animation: MoveUpDown 1s linear infinite;
+  position: relative;
+	color: red;
+  font-family: SkyhookMonoRegular;;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    left: 0;
+  }
+  60% {
+    left: 5px;
+	}
+	100%{
+		left: 0;
+	}
+}
+@media (max-width: 768px) {
+  .more-seta{
+    display: none;
+  }
+}
+
+/* 
+.Proprio-Texto{
+	color: #000000;
+    letter-spacing: 0.10em;
+    font-size: 1.15em;
+    line-height: 1.25em;
+    font-weight: bolder;
+    width: 65%;
+    margin-right: 7%;
+    text-align: justify;
+} 
+ .Proprio-Texto a{
+	font-size: 0.7em;
+    font-style: oblique;
+} 
+	@media (max-width: 768px){
+		.Proprio-Texto{
+			font-size: 0.90em;
+			width: 90%;
+		}
+
+	} */
+
+.contact{
+	margin-top: 4%;
+}
+
+.contact-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+}
+
+.contact-social img{
+	width: 3.5rem;
+	margin: 1rem;
+}
+
+	@media (max-width: 768px){
+		.contact-social li img{
+			width: 10%;
+		}
+	}
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 7%;	
+	background: rgba(255,255,255,0.6);
+}
+
+
+.footer-text{
+	font-size: 0.90rem;
+	color: #000000;
+	text-align: right;
+	letter-spacing: 0.10rem;
+	line-height: 1rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+	@media (max-width: 768px){
+		.footer-text{
+			padding-bottom: 1rem;
+			font-size: 0.60rem;
+		}
+	}
+
+.footer-Autor{
+	letter-spacing: 0.25rem;
+	font-style: oblique;
+}
